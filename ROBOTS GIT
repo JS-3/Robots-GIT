@@ -1,0 +1,100 @@
+$ git init
+Initialized empty Git repository in /home/ccuser/workspace/snapfit-robots/.git/
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        disclaimer.txt
+        instructions.txt
+        warranty.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+$ git add disclaimer.txt
+$ git add instructions.txt
+$ git add warranty.txt
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   disclaimer.txt
+        new file:   instructions.txt
+        new file:   warranty.txt
+
+$ git commit -m "Robots"
+[master (root-commit) 697944e] Robots
+ 3 files changed, 70 insertions(+)
+ create mode 100644 disclaimer.txt
+ create mode 100644 instructions.txt
+ create mode 100644 warranty.txt
+$ git log
+commit 697944ef91b1d2311b355df113e87763fbc0989c
+Author: codecademy <ccuser@codecademy.com>
+Date:   Thu Jul 14 21:13:50 2022 +0000
+
+    Robots
+$ git add disclaimer.txt
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   disclaimer.txt
+
+$ git commit -m "Robots"
+[master 6455c14] Robots
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+$ git log
+commit 6455c1450d80aa532edd1f522ebef571ac5cbcd7
+Author: codecademy <ccuser@codecademy.com>
+Date:   Thu Jul 14 21:14:54 2022 +0000
+
+    Robots
+
+commit 697944ef91b1d2311b355df113e87763fbc0989c
+Author: codecademy <ccuser@codecademy.com>
+Date:   Thu Jul 14 21:13:50 2022 +0000
+
+    Robots
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   disclaimer.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+$ git add disclaimer.txt
+$ git commit -m "Robots"
+[master 54ab15f] Robots
+ 1 file changed, 2 insertions(+)
+$ git log
+commit 54ab15fa9e97c76dd6f3743973ff52356bc95cb7
+Author: codecademy <ccuser@codecademy.com>
+Date:   Thu Jul 14 21:18:39 2022 +0000
+
+    Robots
+
+commit 6455c1450d80aa532edd1f522ebef571ac5cbcd7
+Author: codecademy <ccuser@codecademy.com>
+Date:   Thu Jul 14 21:14:54 2022 +0000
+
+    Robots
+
+commit 697944ef91b1d2311b355df113e87763fbc0989c
+Author: codecademy <ccuser@codecademy.com>
+Date:   Thu Jul 14 21:13:50 2022 +0000
+
+    Robots
+$ git status
+On branch master
+nothing to commit, working directory clean
+$ 
